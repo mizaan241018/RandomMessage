@@ -1,6 +1,7 @@
 //create a function to output a combined messaged pulled at random from three arrays
 function MessageGenerator(doArray, dontArray, warningArray){
     //use a random number between 0 and the array length to find 
+    console.log(Math.random()*warningArray.length);
     return warningArray[Math.floor(Math.random(0,warningArray.length))] + dontArray[Math.floor(Math.random(0,warningArray.length))] + doArray[Math.floor(Math.random(0,warningArray.length))];
 }
 
